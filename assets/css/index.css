@@ -16,7 +16,7 @@ body {
 /* Container */
 .container {
     width: auto;
-    max-width: 1200px;
+    max-width: 1300px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -172,7 +172,7 @@ body {
 .intro {
     background: url("../images/background-first.svg") center no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 120vh;
 }
 .intro__title {
     color: #fff;
@@ -192,7 +192,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: left;
-    top: 45%;
+    top: 35%;
     position: absolute;
 }
 .btn {
@@ -217,5 +217,116 @@ body {
 .btn:hover {
     background-color: #fff;
     color: #333;
+}
+
+
+
+/* section */
+.section {
+    padding: 50px 0;
+}
+.card_display {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    width: 100%!important;
+    margin:50px  20px;
+
+    color: #fff;
+}
+.card_1 {
+    background: url(../images/adults.svg)  no-repeat  ;
+    background-size: cover;
+    background-position: 50% 0;
+}
+.card_2 {
+    background: url(../images/children.svg)  no-repeat  ;
+    background-size: cover;
+    background-position: 50% 0;
+}
+.card_3 {
+    background: url(../images/self-defence.svg)  no-repeat  ;
+    background-size: cover;
+    background-position: 50% 0;
+}
+.card h2 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 56px;
+    margin: 0;
+}
+.card p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+.card a {
+    margin-top: 40px;
+}
+.card_inside {
+    padding: 40px 20px;
+}
+
+/* About Us */
+
+
+.about_us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 30px;
+}
+
+.about_us_images {
+    width: 100%!important;
+}
+.about_us_img {
+    padding: 0 50px;
+    min-width: 330px;
+}
+
+
+.about_us_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.about_us_title {
+    font-family: 'Homemade Apple', sans-serif;
+    font-size: 26px;
+    color: var(--red);
+}
+.about_us_name {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    width: 370px;
+    
+}
+.about_us_name:after {
+    content: "";
+    display: flex;
+    width: 50px;
+    height: 2px;
+    background-color: var(--red);
+    left: 0;
+    z-index: 1;
+
+}
+
+.about_us_p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #707070;
+    max-width: 500px;
+}
+/* Transition */
+
+.transition {
+    
+    padding-top: 80px;
+    padding-bottom: 95px;
+    width: 100%;
+    background: url("../images/transition.svg") center no-repeat; 
+    background-size: cover;
 }
 
