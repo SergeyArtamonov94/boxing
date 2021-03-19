@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Rajdhani:wght@600;700&family=Roboto:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Rajdhani:wght@600;700&family=Roboto:wght@400;500;700&display=swap');
 
 /* font-family: 'Homemade Apple', sans-serif; */
 /* font-family: 'Rajdhani', sans-serif; */
@@ -237,17 +237,17 @@ body {
     color: #fff;
 }
 .card_1 {
-    background: url(../images/adults.svg)  no-repeat  ;
+    background: url("../images/adults.svg")  no-repeat  ;
     background-size: cover;
     background-position: 50% 0;
 }
 .card_2 {
-    background: url(../images/children.svg)  no-repeat  ;
+    background: url("../images/children.svg")  no-repeat  ;
     background-size: cover;
     background-position: 50% 0;
 }
 .card_3 {
-    background: url(../images/self-defence.svg)  no-repeat  ;
+    background: url("../images/self-defence.svg")  no-repeat  ;
     background-size: cover;
     background-position: 50% 0;
 }
@@ -266,6 +266,8 @@ body {
 .card_inside {
     padding: 40px 20px;
 }
+
+
 
 /* About Us */
 
@@ -288,6 +290,7 @@ body {
 .about_us_text {
     display: flex;
     flex-direction: column;
+    max-width: 570px;
 }
 
 .about_us_title {
@@ -313,12 +316,39 @@ body {
 
 }
 
-.about_us_p {
+.about_us p {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: #707070;
-    max-width: 500px;
+    
 }
+.about_us h3 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 24px;
+    color: rgb(22, 18, 15);
+    margin: 0;
+}
+
+.about_us_img_icon img {
+    width: 70px;
+    height: auto;
+    
+    margin: 20px 0;
+}
+.about_us_clarification {
+    display: flex;
+    
+}
+.about_us_clarification p {
+    display: flex;
+    margin: 0; 
+    font-weight: 400;
+}
+.about_us_clarification_text {
+    margin: 20px ;
+}
+
+
 /* Transition */
 
 .transition {
@@ -330,3 +360,43 @@ body {
     background-size: cover;
 }
 
+
+/* Carousel */
+
+/* pts */
+.pts {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    width: auto;
+    height: 400px;
+    text-align: center;
+    
+}
+.pts img {
+    width: auto;
+    height: 70px;
+}
+.pts_first {
+    background: url("../images/1.svg") right no-repeat;
+    background-size: cover;
+    background-color: red;
+    color: white;
+}
+
+.pts_second {
+    background: url("../images/2.svg") right no-repeat;
+    background-size: cover;
+    background-color: rgb(241, 237, 225);
+    color: rgb(22, 18, 15);
+}
+.pts_second h3 {
+    color: var(--red);
+}
+
+.pts_third {
+    background: url("../images/3.svg") right no-repeat;
+    background-size: cover;
+    background-color: rgb(30, 25, 23);
+    color: white;
+}
