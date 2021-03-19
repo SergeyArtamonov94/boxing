@@ -64,29 +64,30 @@ body {
 
     transition: color .1s linear;
 }
-
-.nav__link:after {
-    content: "";
-    display: flex;
-    width: 100%;
-    height: 1.5px;
-
-    background-color: var(--red);
+.nav__link:before {
+    content: "\2022";
+    color: var(--red);
+    padding-right: 10px;
     opacity: 0;
-
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1;
-
+}
+.nav__link:after {
+    content: "\2022";
+    color: var(--red);
+    padding-left: 10px;
+    opacity: 0;
 }
 
 .nav__link:hover {
     color: var(--red);
 }
+.nav__link:hover:before {
+    opacity: 1;
+} 
+
 .nav__link:hover:after {
     opacity: 1;
-}
+} 
+
 
 .img_nav {
     height: 25px;
