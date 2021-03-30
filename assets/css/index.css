@@ -4,10 +4,11 @@
 /* font-family: 'Rajdhani', sans-serif; */
 /* font-family: 'Roboto', sans-serif; */
 
+
 :root {
     --red: rgb(214,35,36);
+      
 }
-
 
 body {
     margin: 0;
