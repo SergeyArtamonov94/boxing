@@ -193,6 +193,7 @@ body {
     max-width: 500px;
     display: flex;
     flex-direction: column;
+    
     top: 35%;
     position: absolute;
 }
@@ -435,9 +436,12 @@ body {
 .faq {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 895px;
+    height: 100%;
+    min-height: 895px;
 }
-
+.faq_right {
+    padding: 15% 0;
+}
 
 .faq_img {
     background: url("../images/faq-img.svg")  no-repeat  ;
@@ -484,33 +488,68 @@ body {
     
     
 }
-/* .about_us h3 {
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 24px;
-    color: rgb(22, 18, 15);
-    margin: 0;
+
+/* Accordion */
+
+.accordion__item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
 }
 
-.about_us_img_icon img {
-    width: 70px;
-    height: auto;
-    
-    margin: 20px 0;
+.accordion__item.active .accordion__content {
+    display: block;
 }
-.about_us_clarification {
-    display: flex;
+
+.accordion__item.active .accordion__header {
+    border-bottom-color: #e5e5e5;
+}
+
+.accordion__item.active .accordion__header:after {
+    transform: translateY(-50%) rotate(-45deg);
+    margin-top: 5px;
+}
+
+.accordion__header {
+    padding: 15px 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.accordion__header:after {
+    content: "";
+    
+    width: 16px;
+    height: 16px;
+
+    border-top: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    z-index: 1;
+
+    transform: translateY(-50%) rotate(135deg);
     
 }
-.about_us_clarification p {
-    display: flex;
-    margin: 0; 
+
+
+.accordion__content {
+    display: none;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.8px;
+    font-size: 16px;
+    color: #707070;
     font-weight: 400;
 }
-.about_us_clarification_text {
-    margin: 20px ;
-} */
 
-
+.accordion__title {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
 
 
 /* go_boxing */
@@ -546,64 +585,4 @@ body {
 }
 
 
-/* Accordion */
 
-.accordion__item {
-    margin-bottom: 10px;
-    border-bottom: 1px solid #e5e5e5;
-}
-
-.accordion__item.active .accordion__content {
-    display: block;
-}
-
-.accordion__item.active .accordion__header {
-    border-bottom-color: #e5e5e5;
-}
-
-.accordion__item.active .accordion__header:after {
-    transform: translateY(-50%) rotate(-45deg);
-    margin-top: 5px;
-}
-
-.accordion__header {
-    padding: 15px 0;
-    position: relative;
-
-    
-    cursor: pointer;
-}
-
-.accordion__header:after {
-    content: "";
-    display: block;
-    width: 16px;
-    height: 16px;
-
-    border-top: 2px solid #ccc;
-    border-right: 2px solid #ccc;
-
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    z-index: 1;
-
-    transform: translateY(-50%) rotate(135deg);
-}
-
-
-.accordion__content {
-    display: none;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 0.8px;
-    font-size: 16px;
-    color: #707070;
-    font-weight: 400;
-}
-
-.accordion__title {
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
