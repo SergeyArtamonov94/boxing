@@ -505,6 +505,7 @@ body {
 
 .accordion__item.active .accordion__content {
     display: block;
+    transition: all 1s linear;
 }
 
 .accordion__item.active .accordion__header {
@@ -911,12 +912,14 @@ body {
 }
 .pricing_article li::marker { 
     content: '✔';
-    color: var(--red);  
+    color: var(--red);
+    font-weight: 900;  
 }
 
 .marker_grey li::marker {
     content: '✖';
     color: rgba(112, 112, 112, 0.33);
+    font-weight: 900;
 }
 .pricing_article h3 {
     font-family: 'Rajdhani', sans-serif;
@@ -964,4 +967,42 @@ body {
 .pricing_button :hover {
     background-color: black;
     color: white;
+}
+
+
+/* free_trial */
+
+.free_trial {
+    padding: 150px 0;
+    width: 100%;
+    background: url("../images/background_free_trial.svg") center no-repeat; 
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    
+}
+.free_trial_inner {
+    text-align: center;
+    max-width: 650px;
+
+}
+.free_trial_suptitle {
+    font-family: 'Homemade Apple', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    margin: 0;
+}
+.free_trial_title {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    margin: auto;
+    max-width: 950px;
+    text-transform: uppercase;
+    padding: 15px 0 40px 0;
+}
+.btn_free_trial {
+    background-color: black;
+    max-width: 160px;
+    
 }
