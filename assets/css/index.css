@@ -206,16 +206,19 @@ header input:checked ~ .nav_all  {
     background: url("../images/adults.svg")  no-repeat  ;
     background-size: cover;
     background-position: 50% 0;
+    border-radius: 10px;
 }
 .card_2 {
     background: url("../images/children.svg")  no-repeat  ;
     background-size: cover;
     background-position: 50% 0;
+    border-radius: 10px;
 }
 .card_3 {
     background: url("../images/self-defence.svg")  no-repeat  ;
     background-size: cover;
     background-position: 50% 0;
+    border-radius: 10px;
 }
 .card h2 {
     font-family: 'Rajdhani', sans-serif;
@@ -231,6 +234,7 @@ header input:checked ~ .nav_all  {
 }
 .card_inside {
     padding: 40px 20px;
+    
 }
 
 
