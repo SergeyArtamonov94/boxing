@@ -46,10 +46,11 @@ body {
     height: 80px;
 }
 
-
-
 /* Nav */
 .nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -60,13 +61,16 @@ body {
     display: inline-block;
     vertical-align: top;
     margin: 0 15px;
+    padding-top: 5px;
     position: relative;
+    flex-wrap: nowrap;
 
     color: #fff;
     text-decoration: none;
 
     transition: color .1s linear;
 }
+
 .nav__link:before {
     content: "\2022";
     color: var(--red);
@@ -92,89 +96,42 @@ body {
 } 
 
 
-.img_nav {
+.img_nav_img {
     height: 25px;
     border-radius: 50%;
-    margin-left: 15px;
+    margin-left: 20px;    
+}
+.img_nav {display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: 70px;   
 }
 .img_nav :hover {
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
-
-
-/* Nav toggle */
-.nav-toggle {
-    width: 30px;
-    padding: 10px 0;
+.burger-icon {
     display: none;
-
-    font-size: 0;
-    color: transparent;
-
-    border: 0;
-    background: none;
-    cursor: pointer;
-
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    z-index: 1;
+    font-size: 3rem;
+    z-index: 5;
+    color: grey;
 }
 
-.nav-toggle__item {
-    display: block;
-    width: 100%;
-    height: 3px;
-
-    background-color: #fff;
-
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-
-    transition: background .2s linear;
+#burger-checkbox {
+    display: none; 
 }
 
-.nav-toggle.active .nav-toggle__item {
-    background: none;
+header .nav_all {
+    display: flex;  
+   
 }
+header input:checked ~ .nav_all  {
+    display: flex;
+ 
+} 
 
-.nav-toggle__item:before,
-.nav-toggle__item:after {
-    content: "";
-    width: 100%;
-    height: 3px;
 
-    background-color: #fff;
 
-    position: absolute;
-    left: 0;
-    z-index: 1;
-
-    transition: transform .2s linear;
-}
-
-.nav-toggle__item:before {
-    top: -8px;
-}
-
-.nav-toggle__item:after {
-    bottom: -8px;
-}
-
-.nav-toggle.active .nav-toggle__item:before {
-    transform-origin: left top;
-    transform: rotate(45deg) translate3d(0px, -2px, 0)
-}
-
-.nav-toggle.active .nav-toggle__item:after {
-    transform-origin: left bottom;
-    transform: rotate(-45deg) translate3d(0px, 3px, 0);
-}
 
 
 /* intro */
@@ -292,7 +249,7 @@ body {
 }
 .about_us_img {
     padding: 0 50px;
-    min-width: 330px;
+    min-width: 280px;
 }
 
 
@@ -311,7 +268,7 @@ body {
     font-family: 'Rajdhani', sans-serif;
     font-size: 56px;
     font-weight: 700;
-    width: 370px;
+    max-width: 370px;
     
 }
 .about_us_name:after {
@@ -447,7 +404,7 @@ body {
     min-height: 895px;
 }
 .faq_right {
-    padding: 15% 0;
+    padding: 15% 10px;
 }
 
 .faq_img {
@@ -1096,3 +1053,7 @@ body {
 .maps {
     padding-top: 30px;
 }
+
+
+
+

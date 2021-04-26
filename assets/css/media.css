@@ -1,0 +1,130 @@
+/* @MEDIA */
+
+
+/* HEADER */
+@media (max-width: 800px) {
+
+    /* Header */
+    .burger-icon {
+        display: flex;
+    }
+
+    header .nav_all {
+        display: none;
+
+    }
+
+
+    header input:checked~.nav_all {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+
+        margin: 0;
+        text-align: center;
+        top: 110px;
+        background-color: rgb(19, 19, 19);
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav__link {
+        padding-bottom: 25px;
+    }
+
+    .img_nav {
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+
+    /* Intro */
+    .intro__title {
+        font-size: 91px;
+    }
+
+    /* section */
+    .card_display {
+        flex-direction: column;
+        width: 95%;
+    }
+
+
+    /* about_us */
+    .about_us {
+        grid-template-columns: 1fr;
+    }
+
+    .about_us_img {
+        padding: 0;
+    }
+
+    .about_us_title {
+        font-size: 16px;
+    }
+
+    .about_us_name {
+        font-size: 38px;
+
+    }
+
+    /* PTS */
+    .pts {
+        grid-template-columns: 1fr;
+    }
+
+    /* FAQ */
+    .faq {
+        grid-template-columns: 1fr;
+    }
+
+    .faq_img {
+        height: 500px;
+    }
+
+
+    /* go_boxing */
+
+.go_boxing_title {
+    overflow-wrap: break-word;
+
+
+}
+
+
+
+@media (max-width: 500px) {
+
+    /* Intro */
+    .intro__title {
+        font-size: 61px;
+    }
+
+    .intro__inner {
+        max-width: 350px;
+    }
+
+    /* section */
+    .card_display {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    /* FAQ */
+    .faq {
+        grid-template-columns: 1fr;
+    }
+
+    .faq_img {
+        height: 500px;
+    }
+
+}
