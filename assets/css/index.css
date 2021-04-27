@@ -194,6 +194,7 @@ header input:checked ~ .nav_all  {
 .card_display {
     display: flex;
     justify-content: space-around;
+    width: 90%;
 }
 
 .card {
@@ -973,42 +974,7 @@ header input:checked ~ .nav_all  {
 }
 
 
-/* Footer */
-.footer {
-    background-color:black;
-    width: 100%;
-    padding-top: 30px;
-}
 
-.footer__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 15px;
-}
-
-.footer__logo_img {
-    height: 80px;
-}
-.footer__logo_img:hover {
-    cursor: pointer;
-}
-
-.nav__link_footer {
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 15px;
-    position: relative;
-
-    color: #fff;
-    text-decoration: none;
-    transition: color .1s linear;
-}
-
-
-.nav__link_footer:hover {
-    color: var(--red);
-}
 
 
 
@@ -1060,8 +1026,45 @@ header input:checked ~ .nav_all  {
 }
 .maps {
     padding-top: 30px;
+    
 }
 
 
 
 
+/* Footer */
+.footer {
+    background-color:black;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.footer__logo_img {
+    height: 80px;
+}
+.footer__logo_img:hover {
+    cursor: pointer;
+}
+
+.nav__link_footer {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+
+    color: #fff;
+    text-decoration: none;
+    transition: color .1s linear;
+}
+
+
+.nav__link_footer:hover {
+    color: var(--red);
+}
