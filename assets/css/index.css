@@ -6,8 +6,8 @@
 
 
 :root {
-    --red: rgb(214,35,36);
-      
+    --red: rgb(214, 35, 36);
+
 }
 
 body {
@@ -50,11 +50,11 @@ body {
 .nav {
     display: flex;
     flex-wrap: wrap;
-    align-items:center;
+    align-items: center;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
-    
+
 }
 
 .nav__link {
@@ -77,6 +77,7 @@ body {
     padding-right: 10px;
     opacity: 0;
 }
+
 .nav__link:after {
     content: "\2022";
     color: var(--red);
@@ -87,25 +88,29 @@ body {
 .nav__link:hover {
     color: var(--red);
 }
+
 .nav__link:hover:before {
     opacity: 1;
-} 
+}
 
 .nav__link:hover:after {
     opacity: 1;
-} 
+}
 
 
 .img_nav_img {
     height: 25px;
     border-radius: 50%;
-    margin-left: 20px;    
+    margin-left: 20px;
 }
-.img_nav {display: flex;
+
+.img_nav {
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin-left: 70px;   
+    margin-left: 70px;
 }
+
 .img_nav :hover {
     opacity: 0.8;
 }
@@ -118,17 +123,18 @@ body {
 }
 
 #burger-checkbox {
-    display: none; 
+    display: none;
 }
 
 header .nav_all {
-    display: flex;  
-   
-}
-header input:checked ~ .nav_all  {
     display: flex;
- 
-} 
+
+}
+
+header input:checked~.nav_all {
+    display: flex;
+
+}
 
 
 
@@ -140,6 +146,7 @@ header input:checked ~ .nav_all  {
     background-size: cover;
     height: 120vh;
 }
+
 .intro__title {
     color: #fff;
     font-family: 'Rajdhani', sans-serif;
@@ -147,20 +154,23 @@ header input:checked ~ .nav_all  {
     margin: 0;
     text-transform: uppercase;
 }
+
 .intro__suptitle {
     color: var(--red);
     font-family: 'Homemade Apple', sans-serif;
     font-weight: 400;
     margin: 0;
 }
+
 .intro__inner {
     max-width: 500px;
     display: flex;
     flex-direction: column;
-    
+
     top: 35%;
     position: absolute;
 }
+
 .btn {
     display: inline-block;
     text-transform: uppercase;
@@ -191,6 +201,7 @@ header input:checked ~ .nav_all  {
 .section {
     padding: 50px 0;
 }
+
 .card_display {
     display: flex;
     justify-content: space-around;
@@ -198,44 +209,51 @@ header input:checked ~ .nav_all  {
 }
 
 .card {
-    width: 100%!important;
-    margin:50px  20px;
+    width: 100% !important;
+    margin: 50px 20px;
 
     color: #fff;
 }
+
 .card_1 {
-    background: url("../images/adults.svg")  no-repeat  ;
+    background: url("../images/adults.svg") no-repeat;
     background-size: cover;
     background-position: 50% 0;
     border-radius: 10px;
 }
+
 .card_2 {
-    background: url("../images/children.svg")  no-repeat  ;
+    background: url("../images/children.svg") no-repeat;
     background-size: cover;
     background-position: 50% 0;
     border-radius: 10px;
 }
+
 .card_3 {
-    background: url("../images/self-defence.svg")  no-repeat  ;
+    background: url("../images/self-defence.svg") no-repeat;
     background-size: cover;
     background-position: 50% 0;
     border-radius: 10px;
 }
+
 .card h2 {
     font-family: 'Rajdhani', sans-serif;
     font-size: 56px;
     margin: 0;
 }
+
 .card p {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
 }
+
 .card a {
     margin-top: 40px;
 }
+
 .card_inside {
     padding: 40px 20px;
-    
+
 }
 
 
@@ -250,8 +268,9 @@ header input:checked ~ .nav_all  {
 }
 
 .about_us_images {
-    width: 100%!important;
+    width: 100% !important;
 }
+
 .about_us_img {
     padding: 0 50px;
     min-width: 280px;
@@ -269,13 +288,15 @@ header input:checked ~ .nav_all  {
     font-size: 26px;
     color: var(--red);
 }
+
 .about_us_name {
     font-family: 'Rajdhani', sans-serif;
     font-size: 56px;
     font-weight: 700;
     max-width: 370px;
-    
+
 }
+
 .about_us_name:after {
     content: "";
     display: flex;
@@ -291,8 +312,9 @@ header input:checked ~ .nav_all  {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: #707070;
-    
+
 }
+
 .about_us h3 {
     font-family: 'Rajdhani', sans-serif;
     font-size: 24px;
@@ -303,31 +325,34 @@ header input:checked ~ .nav_all  {
 .about_us_img_icon img {
     width: 70px;
     height: auto;
-    
+
     margin: 20px 0;
 }
+
 .about_us_clarification {
     display: flex;
-    
+
 }
+
 .about_us_clarification p {
     display: flex;
-    margin: 0; 
+    margin: 0;
     font-weight: 400;
 }
+
 .about_us_clarification_text {
-    margin: 20px ;
+    margin: 20px;
 }
 
 
 /* Transition */
 
 .transition {
-    
+
     padding-top: 80px;
     padding-bottom: 95px;
     width: 100%;
-    background: url("../images/transition.svg") center no-repeat; 
+    background: url("../images/transition.svg") center no-repeat;
     background-size: cover;
 }
 
@@ -340,14 +365,16 @@ header input:checked ~ .nav_all  {
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0;
     width: auto;
-    
+
     text-align: center;
-    
+
 }
+
 .pts img {
     width: auto;
     height: 70px;
 }
+
 .pts_first {
     background: url("../images/1.svg") right no-repeat;
     background-size: cover;
@@ -355,10 +382,12 @@ header input:checked ~ .nav_all  {
     color: white;
     padding: 90px 70px;
 }
+
 .pts_first h3 {
     font-family: 'Rajdhani', sans-serif;
     font-size: 36px;
 }
+
 .pts_first span {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -371,11 +400,13 @@ header input:checked ~ .nav_all  {
     color: rgb(22, 18, 15);
     padding: 90px 70px;
 }
+
 .pts_second h3 {
     font-family: 'Rajdhani', sans-serif;
     font-size: 36px;
     color: var(--red);
 }
+
 .pts_second span {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -389,10 +420,12 @@ header input:checked ~ .nav_all  {
     color: white;
     padding: 90px 70px;
 }
+
 .pts_third h3 {
     font-family: 'Rajdhani', sans-serif;
     font-size: 36px;
 }
+
 .pts_third span {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -408,12 +441,13 @@ header input:checked ~ .nav_all  {
     height: 100%;
     min-height: 895px;
 }
+
 .faq_right {
     padding: 15% 10px;
 }
 
 .faq_img {
-    background: url("../images/faq-img.svg")  no-repeat  ;
+    background: url("../images/faq-img.svg") no-repeat;
     background-size: cover;
     background-position: 25% 0;
 }
@@ -433,12 +467,14 @@ header input:checked ~ .nav_all  {
     color: var(--red);
     text-transform: uppercase;
 }
+
 .faq_name {
     font-family: 'Rajdhani', sans-serif;
     font-size: 56px;
     font-weight: 700;
-    
+
 }
+
 .faq_name:after {
     content: "";
     display: flex;
@@ -454,8 +490,8 @@ header input:checked ~ .nav_all  {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 500;
-    
-    
+
+
 }
 
 /* Accordion */
@@ -487,7 +523,7 @@ header input:checked ~ .nav_all  {
 
 .accordion__header:after {
     content: "";
-    
+
     width: 16px;
     height: 16px;
 
@@ -500,7 +536,7 @@ header input:checked ~ .nav_all  {
     z-index: 1;
 
     transform: translateY(-50%) rotate(135deg);
-    
+
 }
 
 
@@ -518,7 +554,7 @@ header input:checked ~ .nav_all  {
     font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
-    
+
 }
 
 
@@ -527,21 +563,24 @@ header input:checked ~ .nav_all  {
 .go_boxing {
     padding: 150px 0;
     width: 100%;
-    background: url("../images/go_boxing.svg") center no-repeat; 
+    background: url("../images/go_boxing.svg") center no-repeat;
     background-size: cover;
     color: white;
-    
+
 }
+
 .go_boxing_inner {
     text-align: center;
 
 }
+
 .go_boxing_suptitle {
     font-family: 'Homemade Apple', sans-serif;
     font-size: 26px;
     font-weight: 400;
     margin: 0;
 }
+
 .go_boxing_title {
     font-family: 'Rajdhani', sans-serif;
     font-size: 100px;
@@ -549,6 +588,7 @@ header input:checked ~ .nav_all  {
     margin: auto;
     max-width: 950px;
 }
+
 .btn_go_boxing {
     background-color: black;
     max-width: 160px;
@@ -559,26 +599,30 @@ header input:checked ~ .nav_all  {
     padding: 100px 0;
     background-color: #f1ede1;
 }
+
 .schedule_header {
     display: flex;
     flex-direction: column;
     text-align: center;
     min-width: 350px;
-    
+
 }
+
 .schedule_title {
     font-family: 'Homemade Apple', sans-serif;
     font-size: 26px;
     color: var(--red);
 }
+
 .schedule_name {
     font-family: 'Rajdhani', sans-serif;
     font-size: 56px;
     font-weight: 700;
     text-transform: uppercase;
-    
-    
+
+
 }
+
 .schedule_name:after {
     content: "";
     display: flex;
@@ -599,10 +643,11 @@ header input:checked ~ .nav_all  {
 
 .table_time {
     border: 2px;
-    border-collapse:collapse;
-    width: 100%!important;
-    
+    border-collapse: collapse;
+    width: 100% !important;
+
 }
+
 .table_time p {
     margin: 0;
     padding-bottom: 5px;
@@ -611,15 +656,19 @@ header input:checked ~ .nav_all  {
     font-weight: 400;
     color: #707070;
 }
-.table_time th, td {
+
+.table_time th,
+td {
     border: 1px solid grey;
     padding: 15px 20px;
 }
+
 .table_time th {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    font-weight: 700;  
+    font-weight: 700;
 }
+
 .tr_name th {
     background-color: var(--red);
     color: white;
@@ -628,13 +677,77 @@ header input:checked ~ .nav_all  {
     font-weight: 700;
 }
 
+
+
+/* schedule mobile */
+.schedule_mobile {
+
+    background-color: #f1ede1;
+}
+
+.schedule_table_mobile {
+    margin: auto;
+    text-align: left;
+    display: none;
+    padding: 50px 0;
+
+}
+
+.table_time_mobile {
+    
+    border: 2px;
+    border-collapse: collapse;
+    width: 100% !important;
+
+}
+
+.table_time_mobile th,
+td {
+    border: 1px solid grey;
+    padding: 15px 20px;
+}
+
+.second_name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.table_time_mobile p {
+    margin: 0;
+    padding-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #707070;
+}
+
+.table_time_ th,
+td {
+    border: 1px solid grey;
+    padding: 15px 20px;
+}
+
+.red_name {
+    background-color: var(--red);
+    color: white;
+    font-size: 24px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+}
+
+
+
+
 /* team_block */
 .team_block {
     padding: 80px 0;
 }
+
 .team {
     display: flex;
 }
+
 .team_card {
     position: relative;
     overflow: hidden;
@@ -642,8 +755,9 @@ header input:checked ~ .nav_all  {
     margin: 15px 15px;
     border-width: 20px;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.95);   
+    background-color: rgba(0, 0, 0, 0.95);
 }
+
 .team_card_img {
     display: block;
     width: 100%;
@@ -651,18 +765,18 @@ header input:checked ~ .nav_all  {
     left: -30%;
     overflow: hidden;
     z-index: 1;
-    transition: all 0.8s ;   
+    transition: all 0.8s;
 }
 
 .team_card_text {
-    top:30%;
+    top: 30%;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     text-align: center;
     align-items: center;
     z-index: 1;
-    display:none;
-    color: #fff;    
+    display: none;
+    color: #fff;
 }
 
 .team_card_text h2 {
@@ -670,45 +784,49 @@ header input:checked ~ .nav_all  {
     font-family: 'Rajdhani', sans-serif;
 }
 
-.team_card:hover .team_card_text{
+.team_card:hover .team_card_text {
     display: block;
-    position:absolute;     
+    position: absolute;
 }
-.team_card:hover .team_card_img{
-    opacity: 0.1;   
+
+.team_card:hover .team_card_img {
+    opacity: 0.1;
 }
 
 
 /* About Boxing */
 .about_boxing {
     padding: 150px 0 100px 0;
-    background: url("../images/background_about_boxing.svg") center no-repeat; 
+    background: url("../images/background_about_boxing.svg") center no-repeat;
     background-size: cover;
     background-position: 0% 45%;
-    
+
     color: white;
 }
+
 .about_boxing_text {
     display: flex;
     flex-direction: column;
     max-width: 570px;
-    text-align: left;  
+    text-align: left;
 }
 
 .about_boxing_title {
     font-family: 'Homemade Apple', sans-serif;
     font-size: 26px;
     color: var(--red);
-    
+
 }
+
 .about_boxing_name {
     font-family: 'Rajdhani', sans-serif;
     font-size: 56px;
     font-weight: 700;
     text-transform: uppercase;
     color: white;
-    
+
 }
+
 .about_boxing_name:after {
     content: "";
     display: flex;
@@ -721,8 +839,8 @@ header input:checked ~ .nav_all  {
 .about_boxing_p {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    font-weight: 400; 
-    color: #ebe9e9;  
+    font-weight: 400;
+    color: #ebe9e9;
 }
 
 
@@ -731,19 +849,20 @@ header input:checked ~ .nav_all  {
     color: var(--red);
     font-family: 'Roboto', sans-serif;
     font-size: 65px;
-    font-weight: 700; 
+    font-weight: 700;
 }
 
 .about_boxing_clarification {
-    display: flex; 
+    display: flex;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    font-weight: 400;  
+    font-weight: 400;
 }
 
 .about_boxing_clarification_text {
     padding: 20px 0 0 20px;
 }
+
 .about_boxing_clarification_text h3 {
     font-family: 'Rajdhani', sans-serif;
     font-size: 24px;
@@ -756,7 +875,7 @@ header input:checked ~ .nav_all  {
 .events {
     padding: 100px 0;
     background-color: #f1ede1;
-    
+
 }
 
 .events_block {
@@ -768,34 +887,38 @@ header input:checked ~ .nav_all  {
     justify-content: space-around;
     background-color: white;
     padding-top: 15px;
-    
+
 }
+
 .events_icon {
     margin-top: 20px;
     padding-top: 15px;
 }
+
 .events_p {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    font-weight: 500; 
+    font-weight: 500;
 }
 
 .events_date span {
     color: var(--red);
     font-family: 'Rajdhani', sans-serif;
     font-size: 100px;
-    font-weight: 700; 
+    font-weight: 700;
 }
+
 .events_date p {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 700;
-    margin: 0; 
+    margin: 0;
 }
 
 .events_info {
     padding-top: 20px;
 }
+
 .events_info h3 {
     font-family: 'Rajdhani', sans-serif;
     font-size: 24px;
@@ -803,12 +926,14 @@ header input:checked ~ .nav_all  {
     text-transform: uppercase;
     margin-bottom: 5px;
 }
+
 .events_info span {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 1.4px;
 }
+
 .events_span_red {
     color: var(--red);
 }
@@ -822,15 +947,18 @@ header input:checked ~ .nav_all  {
     font-size: 14px;
     letter-spacing: 1.4px;
 }
+
 .events_span_grey {
     padding-bottom: 10px;
     color: #707070;
-    font-weight: 700;   
+    font-weight: 700;
 }
+
 .btn_events {
     max-width: 150px;
     margin-top: 30px;
 }
+
 .btn_events:hover {
     background-color: black;
     color: white;
@@ -843,39 +971,45 @@ header input:checked ~ .nav_all  {
     padding: 50px 0;
     background-color: #f1ede1;
 }
+
 .pricing_all {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    text-align: left;      
+    text-align: left;
 }
+
 .pricing_article {
     background-color: white;
     box-shadow: 0px 0px 10px 1px #373434;
     margin: 50px 10px 0 10px;
     padding-left: 20px;
     padding-right: 20px;
-    width: 25%!important;  
+    width: 25% !important;
 }
+
 .pricing_article ul {
     padding-left: 20px;
     margin: 0;
 }
+
 .pricing_article ul li {
     padding-left: 20px;
     padding-bottom: 15px;
 }
+
 .pricing_article li {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
     color: #707070;
     font-weight: 400;
-    
+
 }
-.pricing_article li::marker { 
+
+.pricing_article li::marker {
     content: '✔';
     color: var(--red);
-    font-weight: 900;  
+    font-weight: 900;
 }
 
 .marker_grey li::marker {
@@ -883,6 +1017,7 @@ header input:checked ~ .nav_all  {
     color: rgba(112, 112, 112, 0.33);
     font-weight: 900;
 }
+
 .pricing_article h3 {
     font-family: 'Rajdhani', sans-serif;
     font-size: 24px;
@@ -890,21 +1025,24 @@ header input:checked ~ .nav_all  {
     text-align: center;
     text-transform: uppercase;
     padding-top: 20px;
-    
+
 }
+
 .pricing_block {
     display: flex;
     flex-direction: column;
     text-align: center;
     vertical-align: baseline;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
 }
+
 .pricing_block1 {
     font-family: 'Rajdhani', sans-serif;
     font-size: 56px;
     font-weight: 700;
-    color: var(--red);   
+    color: var(--red);
 }
+
 .pricing_block1:after {
     content: "";
     display: flex;
@@ -915,6 +1053,7 @@ header input:checked ~ .nav_all  {
     margin: auto;
     z-index: 1;
 }
+
 .pricing_block2 {
     font-size: 14px;
     font-weight: 400;
@@ -922,14 +1061,17 @@ header input:checked ~ .nav_all  {
     padding: 10px 0;
     letter-spacing: 1.4px;
 }
+
 .pricing_button {
     text-align: center;
     padding: 30px 0;
-    
+
 }
+
 .pricing_button .btn {
     width: 70%;
 }
+
 .pricing_button :hover {
     background-color: black;
     color: white;
@@ -941,23 +1083,26 @@ header input:checked ~ .nav_all  {
 .free_trial {
     padding: 150px 0;
     width: 100%;
-    background: url("../images/background_free_trial.svg") center no-repeat; 
+    background: url("../images/background_free_trial.svg") center no-repeat;
     background-attachment: fixed;
     background-size: cover;
     color: white;
-    
+
 }
+
 .free_trial_inner {
     text-align: center;
     max-width: 650px;
 
 }
+
 .free_trial_suptitle {
     font-family: 'Homemade Apple', sans-serif;
     font-size: 26px;
     font-weight: 400;
     margin: 0;
 }
+
 .free_trial_title {
     font-family: 'Rajdhani', sans-serif;
     font-size: 56px;
@@ -967,10 +1112,11 @@ header input:checked ~ .nav_all  {
     text-transform: uppercase;
     padding: 15px 0 40px 0;
 }
+
 .btn_free_trial {
     background-color: black;
     max-width: 160px;
-    
+
 }
 
 
@@ -982,51 +1128,61 @@ header input:checked ~ .nav_all  {
 .contact_us {
     background-color: black;
     color: white;
-    
+
 }
+
 .contact_us_display {
     display: flex;
     padding: 100px 0 40px 0;
     margin: auto;
 }
+
 .contact_us_p {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    font-weight: 700;  
-    padding-bottom: 20px; 
+    font-weight: 700;
+    padding-bottom: 20px;
 }
+
 .contact_us_clarification {
     display: flex;
 }
+
 .contact_us_clarification p {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;  
+    font-size: 16px;
     padding: 0 15px;
 }
+
 .contact_us_clarification a {
-    
+
     color: white;
 }
+
 .contact_us_clarification a:hover {
     text-decoration: none;
 }
+
 .contact_us_clarification h3 {
     font-family: 'Rajdhani', sans-serif;
     font-size: 24px;
     padding-right: 30px;
 }
+
 .contact_us_right {
     background-color: rgb(30, 25, 23);
-    margin:0 20px;
+    margin: 0 20px;
     width: 50%;
 }
+
 .contact_us_left {
-    margin:0 20px;
+    margin: 0 20px;
     width: 50%;
 }
+
 .maps {
     padding-top: 30px;
-    
+
 }
 
 
@@ -1034,7 +1190,7 @@ header input:checked ~ .nav_all  {
 
 /* Footer */
 .footer {
-    background-color:black;
+    background-color: black;
     width: 100%;
     padding-top: 30px;
 }
@@ -1049,6 +1205,7 @@ header input:checked ~ .nav_all  {
 .footer__logo_img {
     height: 80px;
 }
+
 .footer__logo_img:hover {
     cursor: pointer;
 }
