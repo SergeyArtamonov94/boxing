@@ -123,14 +123,17 @@
         display: none;
         padding-bottom: 0px;
     }
+
     .schedule {
-        
+
         padding-bottom: 0px;
     }
 
     .schedule_table_mobile {
         display: flex;
     }
+
+
 
     /* team_block */
     .team {
@@ -238,6 +241,18 @@
         width: 90%;
     }
 
+    .card_inside .btn {
+        width: auto;
+    }
+
+
+
+    /* about us */
+    .about_us_img {
+        min-width: 50px;
+    }
+
+
     /* FAQ */
     .faq {
         grid-template-columns: 1fr;
@@ -281,9 +296,7 @@
 
 
     /* events */
-    .events .schedule_header {
-        min-width: 250px;
-    }
+
 
     .events .schedule_header .schedule_title {
         font-size: 14px;
@@ -334,5 +347,13 @@
 
     .free_trial .btn {
         width: 40%;
+    }
+
+
+
+
+    /* contact us */
+    .contact_us_clarification {
+        flex-direction: column;
     }
 }
