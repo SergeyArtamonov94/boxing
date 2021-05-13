@@ -958,6 +958,9 @@ td {
     max-width: 150px;
     margin-top: 30px;
 }
+.btn_events_two {
+margin-right: 4px;
+}
 
 .btn_events:hover {
     background-color: black;
@@ -1132,7 +1135,7 @@ td {
 }
 
 .contact_us_display {
-    display: flex;
+    
     padding: 100px 0 40px 0;
     margin: auto;
 }
@@ -1144,9 +1147,6 @@ td {
     padding-bottom: 20px;
 }
 
-.contact_us_clarification {
-    display: flex;
-}
 
 .contact_us_clarification p {
     font-family: 'Roboto', sans-serif;
@@ -1169,15 +1169,39 @@ td {
     padding-right: 30px;
 }
 
-.contact_us_right {
+/* .contact_us_right {
     background-color: rgb(30, 25, 23);
     margin: 0 20px;
     width: 50%;
-}
+} */
 
 .contact_us_left {
-    margin: 0 20px;
-    width: 50%;
+    /* margin: 0 20px;
+    width: 50%; */
+    text-align: center;
+    justify-content: space-around;
+}
+
+.contact_us_left .about_boxing_text {
+    width: 100%;
+    text-align: center;
+    max-width: 1300px;
+}
+.contact_us_left .about_boxing_text .about_boxing_name:after {
+    content: "";
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 50px;
+    height: 3px;
+    background-color: var(--red);
+    z-index: 1;
+}
+.contact_us_left .about_boxing_text .contact_us_clarification {
+    text-align: center;
+   
+    display: flex;
+    justify-content: center;
 }
 
 .maps {
@@ -1224,4 +1248,9 @@ td {
 
 .nav__link_footer:hover {
     color: var(--red);
+}
+
+
+.contact_us_right {
+    display: none;
 }
